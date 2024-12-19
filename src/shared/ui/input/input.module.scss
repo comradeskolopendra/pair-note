@@ -1,0 +1,36 @@
+.block {
+  position: relative;
+  margin-top: 10px;
+}
+
+.label {
+  position: absolute;
+  top: -15px;
+  left: 5px;
+
+  color: grey;
+  text-align: left;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 10px;
+}
+
+.input {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 8px;
+  padding: 10px 5px;
+
+  font-size: 16px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.invalid {
+  border: 1px solid #f44336;
+}
+
+.invalidLabel {
+  color: #f44336;
+}

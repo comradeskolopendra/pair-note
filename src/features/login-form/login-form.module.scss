@@ -1,0 +1,30 @@
+.block {
+  display: block;
+  box-sizing: border-box;
+
+  padding: 16px;
+
+  width: 100%;
+  max-width: 360px;
+
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 8px;
+}
+
+.form {
+  display: grid;
+
+  gap: 20px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+}
