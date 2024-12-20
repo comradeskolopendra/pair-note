@@ -1,0 +1,29 @@
+.main {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 100%;
+
+  min-height: 100vh;
+
+  grid-template-areas: "sidebar content"
+}
+
+.aside {
+  grid-area: sidebar;
+
+  padding: 20px;
+
+  border-right: 1px solid rgba(128, 128, 128, 0.3);
+
+  & ul {
+    padding: 0;
+
+    list-style: none;
+  }
+}
+
+.content {
+  grid-area: content;
+
+  padding: 20px;
+}

@@ -2,7 +2,7 @@ import {LoginForm} from "@/features";
 import styles from "./login.module.scss";
 
 
-const Login = () => {
+const LoginPage = () => {
     return (
         <main className={styles.main}>
             <LoginForm/>
@@ -10,4 +10,4 @@ const Login = () => {
     )
 };
 
-export default Login;
+export default LoginPage;

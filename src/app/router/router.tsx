@@ -1,10 +1,23 @@
 import {createHashRouter, RouterProvider} from "react-router";
-import {Login} from "@/pages";
+import {LoginPage, MainPage} from "@/pages";
+import {AuthProtectedRoute, UnAuthProtectedRoute} from "@/app/protected-route/protected-route";
 
 const router = createHashRouter([
     {
+        path: "/login",
+        element: (
+            <UnAuthProtectedRoute>
+                <LoginPage/>
+            </UnAuthProtectedRoute>
+        )
+    },
+    {
         path: "/",
-        element: <Login/>,
+        element: (
+            <AuthProtectedRoute>
+                <MainPage/>
+            </AuthProtectedRoute>
+        )
     }
 ]);
 
